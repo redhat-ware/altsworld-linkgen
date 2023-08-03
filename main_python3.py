@@ -6,6 +6,9 @@ from selenium.webdriver.chrome.options import Options
 from threading import Thread
 from threading import Lock
 from google.colab import files
+from webdriver_manager.chrome import ChromeDriverManager
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
 
 # Function to generate a random alphanumeric string
 def get_random_string(length):
